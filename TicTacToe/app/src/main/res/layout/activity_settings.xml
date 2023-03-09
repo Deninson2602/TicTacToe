@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/fondotictactoe" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="My Toolbar">
+
+        <ImageButton
+            android:id="@+id/my_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/baseline_house_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/language_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textoSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:text="@string/textoSettings"
+            android:fontFamily="@font/stylish" />
+
+        <RadioButton
+            android:id="@+id/ingles_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inglés"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:fontFamily="@font/stylish"/>
+
+        <RadioButton
+            android:id="@+id/espanol_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Español"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:fontFamily="@font/stylish"/>
+
+        <RadioButton
+            android:id="@+id/frances_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Francés"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:fontFamily="@font/stylish"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aplicar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/language_options"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/decoracionbtn"
+        android:text="change" />
+
+</RelativeLayout>

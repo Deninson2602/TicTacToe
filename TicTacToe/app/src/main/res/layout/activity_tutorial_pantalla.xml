@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorialPantalla">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="My Toolbar">
+
+        <ImageButton
+            android:id="@+id/my_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/baseline_settings_24" />
+
+        <ImageButton
+            android:id="@+id/my_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/baseline_arrow_back_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/fondotictactoe"
+        android:fontFamily="@font/stylish" />
+
+    <TextView
+        android:id="@+id/textoTutorial1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+        android:textSize="21sp"
+        android:text="@string/textoTuto1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/stylish" />
+
+    <TextView
+        android:id="@+id/textoTutorial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textoTutorial1"
+        android:textSize="21sp"
+        android:text="@string/textoTuto2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/stylish" />
+
+    <TextView
+        android:id="@+id/textoTutorial3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textoTutorial2"
+        android:textSize="21sp"
+        android:text="@string/textoTuto3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/stylish" />
+
+    <TextView
+        android:id="@+id/textoTutorial4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textoTutorial3"
+        android:textSize="21sp"
+        android:text="@string/textoTuto4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/stylish" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/_enrayatuto"
+        android:layout_below="@id/textoTutorial4"
+        android:textAlignment="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonComenzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/decoracionbtn"
+        android:layout_centerHorizontal="true"
+        android:text="Listo para jugar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imageView3"/>
+
+
+</RelativeLayout>

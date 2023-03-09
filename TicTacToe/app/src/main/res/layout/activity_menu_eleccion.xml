@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuEleccion">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:src="@drawable/fondotictactoe"
+        android:layout_marginTop="70dp"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="My Toolbar">
+
+        <ImageButton
+            android:id="@+id/my_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/baseline_settings_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tutorialMenu"
+        android:background="@drawable/decoracionbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorial"
+        android:layout_below="@id/my_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/stylish"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tableroLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/decoracionbtn"
+        android:text="juego local"
+        android:layout_below="@id/tutorialMenu"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/stylish" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tableroIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/decoracionbtn"
+        android:text="vs IA"
+        android:layout_below="@id/tableroLocal"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/stylish" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tableroOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/decoracionbtn"
+        android:text="Acceder"
+        android:layout_below="@id/tableroIA"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/stylish" />
+
+    <TextView
+        android:id="@+id/textoRnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TicTacToe World"
+        android:layout_below="@id/tableroIA"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/stylish" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView2"
+        android:layout_width="104dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tableroIA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        app:srcCompat="@drawable/onlinelogo" />
+
+</RelativeLayout>

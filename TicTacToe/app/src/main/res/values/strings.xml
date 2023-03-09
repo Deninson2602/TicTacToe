@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="textoTuto1">Explicación y reglas: </string>
+    <string name="textoTuto2">1. El juego se juega en una cuadrícula de 3x3 cuadrados.</string>
+    <string name="textoTuto3">2. Cada jugador tendrá 3 fichas, comienza uno poniendo una y el rival
+    la siguiente , sucesivamente hasta que los 3 hayan puesto sus fichas.</string>
+    <string name="textoTuto4">3. Una vez estén todas las fichas en el tablero, deberan ir moviéndose
+    hasta que uno de los dos consiga hacer un 3 en raya.</string>
+    <string name="textoSettings">Seleccione el idioma: </string>
+</resources>
